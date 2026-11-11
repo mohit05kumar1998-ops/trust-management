@@ -211,11 +211,16 @@
                         <div>
                             <label class="block text-xs font-semibold text-slate-600 mb-1">इच्छित भूमिका / पद *</label>
                             <select id="mRole" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-trustPrimary focus:outline-none">
+                               <option value="संस्थापक / Founder">संस्थापक (Founder)</option>
+                                <option value="सह-संस्थापक /CO-Founder">सह-संस्थापक (Co-Founder)</option>
+                                <option value="अध्यक्ष /President">अध्यक्ष (President)</option>
+                                <option value="उपाध्यक्ष /Vice-President">उपाध्यक्ष (Vice-President)</option>
+                                <option value="महासचिव /Genral Secretary">महासचिव (Genral Secretary)</option>
+                                <option value="संयुक्त सचिव /Joint Secretary">महासचिव (Genral Secretary)</option>
+                                <option value="कोषाध्यक्ष / Treasurer">कोषाध्यक्ष (Treasurer)</option>
+                                <option value="मीडिया एवं प्रचार प्रभारी / Media and Prachar Prabhari">मीडिया एवं प्रचार प्रभारी (Media and Prachar Prabhari)</option>
                                 <option value="सक्रिय कार्यकर्ता / Volunteer" selected>सक्रिय कार्यकर्ता (Volunteer)</option>
-                                <option value="वरिष्ठ सदस्य / Senior Member">वरिष्ठ सदस्य (Senior Member)</option>
                                 <option value="संरक्षक / Donor">संरक्षक / डोनर (Donor)</option>
-                                <option value="जिला संयोजक">जिला संयोजक</option>
-                                <option value="अन्य जिम्मेदारी">अन्य जिम्मेदारी</option>
                             </select>
                         </div>
                         <div>
@@ -649,10 +654,7 @@
     <!-- JAVASCRIPT LOGIC -->
     <script>
         // Default initial trust members state (pre-approved)
-        const initialMembers = [
-            { id: 1, name: "रमेश कुमार वर्मा", role: "अध्यक्ष / Founder", phone: "9876543210", city: "इंदौर", date: "2024-01-15", status: "approved" },
-            { id: 2, name: "अंशुमन सिंह", role: "सचिव / Secretary", phone: "9812345678", city: "भोपाल", date: "2024-02-10", status: "approved" }
-        ];
+        const initialMembers = [ ];
 
         // Load data from LocalStorage or initialize
         let members = JSON.parse(localStorage.getItem('jsf_members')) || initialMembers;
@@ -867,7 +869,7 @@
         // Admin Panel Logics
         function verifyAdminLogin() {
             const pass = document.getElementById('adminPasswordInput').value.trim();
-            if (pass === "admin123") {
+            if (pass === "Founder1912") {
                 document.getElementById('adminLoginBox').classList.add('hidden');
                 document.getElementById('adminDashboardBox').classList.remove('hidden');
                 document.getElementById('adminPasswordInput').value = '';
