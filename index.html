@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>सहयोग धारा फाउंडेशन - Charity & Human Welfare Trust</title>
+    <title>जन सेवा फाउंडेशन - Charity & Human Welfare Trust</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -42,11 +42,11 @@
 
     <!-- Top Announcement Bar -->
     <div class="bg-trustDark text-white text-xs sm:text-sm py-2 px-4 text-center flex justify-between items-center max-w-7xl mx-auto w-full">
-        <span><i class="fa-solid fa-heart text-red-500 mr-1"></i> जन सेवा और मानव कल्याण सेवा संघ</span>
+        <span><i class="fa-solid fa-heart text-red-500 mr-1"></i> जन सेवा और मानव कल्याण सेवा संघ (पंजीकृत चैरिटी)</span>
         <div class="hidden sm:flex space-x-4 items-center">
             <a href="tel:+919876543210" class="hover:text-green-400"><i class="fa-solid fa-phone mr-1"></i> +91 98765 43210</a>
             <button onclick="switchTab('admin')" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-2.5 py-1 rounded text-xs transition">
-                <i class="fa-solid fa-lock mr-1"></i> Admin Panel
+                <i class="fa-solid fa-lock mr-1"></i> एडमिन पैनल
             </button>
         </div>
     </div>
@@ -61,8 +61,8 @@
                         <i class="fa-solid fa-hand-holding-heart"></i>
                     </div>
                     <div>
-                        <span class="text-xl font-bold text-slate-900 block leading-tight">सहयोग धारा फाउंडेशन</span>
-                        <span class="text-xs text-trustPrimary font-medium">Sahyog Dhara Foundation</span>
+                        <span class="text-xl font-bold text-slate-900 block leading-tight">जन सेवा फाउंडेशन</span>
+                        <span class="text-xs text-trustPrimary font-medium">Jan Seva Welfare Trust</span>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@
                     <button onclick="switchTab('causes')" class="hover:text-trustPrimary transition-colors py-2" id="nav-causes">कार्य (Causes)</button>
                     <button onclick="switchTab('volunteer')" class="hover:text-trustPrimary transition-colors py-2" id="nav-volunteer">जुड़ें (Volunteer)</button>
                     <button onclick="switchTab('admin')" class="text-amber-600 hover:text-amber-700 font-bold transition-colors py-2 flex items-center gap-1">
-                        <i class="fa-solid fa-user-shield"></i> Admin
+                        <i class="fa-solid fa-user-shield"></i> एडमिन
                     </button>
                 </div>
 
@@ -140,11 +140,11 @@
             <!-- Impact Quick Counter -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
-                    <div class="text-3xl font-extrabold text-trustPrimary mb-1">0</div>
+                    <div class="text-3xl font-extrabold text-trustPrimary mb-1">5,000+</div>
                     <div class="text-xs sm:text-sm text-slate-500 font-medium">भोजन पैकेट वितरित</div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
-                    <div class="text-3xl font-extrabold text-trustWarm mb-1">0</div>
+                    <div class="text-3xl font-extrabold text-trustWarm mb-1">250+</div>
                     <div class="text-xs sm:text-sm text-slate-500 font-medium">बच्चों की शिक्षा सहायता</div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
@@ -211,7 +211,7 @@
                         <div>
                             <label class="block text-xs font-semibold text-slate-600 mb-1">इच्छित भूमिका / पद *</label>
                             <select id="mRole" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-trustPrimary focus:outline-none">
-                               <option value="संस्थापक / Founder">संस्थापक (Founder)</option>
+                                <option value="संस्थापक / Founder">संस्थापक (Founder)</option>
                                 <option value="सह-संस्थापक /CO-Founder">सह-संस्थापक (Co-Founder)</option>
                                 <option value="अध्यक्ष /President">अध्यक्ष (President)</option>
                                 <option value="उपाध्यक्ष /Vice-President">उपाध्यक्ष (Vice-President)</option>
@@ -237,7 +237,7 @@
                     </form>
                 </div>
 
-                <!-- Members List Display -->
+                <!-- Members List Display (Public View - No Delete Button) -->
                 <div class="lg:col-span-2 space-y-4">
                     <div class="flex justify-between items-center text-xs text-slate-500 px-1">
                         <span>कुल स्वीकृत सदस्य: <strong id="memberCountText" class="text-slate-800">0</strong></span>
@@ -269,7 +269,7 @@
                         <!-- QR Code Frame -->
                         <div class="inline-block p-4 bg-white border-2 border-dashed border-trustPrimary rounded-2xl shadow-inner my-2">
                             <img id="upiQrImage" src="" alt="Trust UPI QR Code" class="w-48 h-48 mx-auto object-contain">
-                            <span class="text-[10px] text-slate-400 block mt-2">Sahyog Dhara Foundation Official QR</span>
+                            <span class="text-[10px] text-slate-400 block mt-2">Jan Seva Welfare Trust Official QR</span>
                         </div>
 
                         <!-- UPI ID & Fast Copy -->
@@ -319,9 +319,9 @@
                             <label class="block text-xs font-semibold text-slate-600 mb-1">सहयोग का उद्देश्य (Reason / Remarks)</label>
                             <select id="dPurpose" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-trustPrimary focus:outline-none">
                                 <option value="सामान्य समाज सेवा (General Donation)">सामान्य समाज सेवा (General Donation)</option>
-                                <option value="बच्चों की शिक्षा (Child Education)">बच्चों की शिक्षा (Child Education)</option>
-                                <option value="भोजन सेवा (Food Distribution)">निःशुल्क भोजन सेवा (Food)</option>
-                                <option value="चिकित्सा सहायता (Medical Help)">चिकित्सा सहायता (Medical)</option>
+                                <option value="भोजन सेवा (Food Distribution)">निःशुल्क भोजन सेवा (Food Distribution)</option>
+                                <option value="बच्चों की शिक्षा (Child Education)">बाल शिक्षा अभियान (Child Education)</option>
+                                <option value="चिकित्सा सहायता (Medical Help)">आपातकालीन स्वास्थ्य सेवा (Medical Help)</option>
                             </select>
                         </div>
                         <button type="submit" class="w-full bg-trustWarm hover:bg-orange-600 text-white font-bold py-3 rounded-lg shadow transition flex items-center justify-center">
@@ -342,8 +342,8 @@
                     <div id="printableReceipt" class="bg-emerald-50/50 p-6 rounded-xl receipt-border space-y-4">
                         <div class="flex justify-between items-start border-b border-slate-200 pb-3">
                             <div>
-                                <h3 class="font-bold text-lg text-trustPrimary">सहयोग धारा फाउंडेशन</h3>
-                                <p class="text-[11px] text-slate-500">पंजीकरण संख्या: REG/NGO/2025/0000</p>
+                                <h3 class="font-bold text-lg text-trustPrimary">जन सेवा फाउंडेशन</h3>
+                                <p class="text-[11px] text-slate-500">पंजीकरण संख्या: REG/NGO/2024/1089</p>
                             </div>
                             <div class="text-right">
                                 <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-1 rounded">डोनेशन रसीद</span>
@@ -354,7 +354,7 @@
                         <div class="space-y-2 text-xs">
                             <div class="flex justify-between">
                                 <span class="text-slate-500">रसीद क्र. (Receipt No):</span>
-                                <span class="font-mono font-bold" id="recNo">#JSF-000</span>
+                                <span class="font-mono font-bold" id="recNo">#JSF-0</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-slate-500">दानदाता का नाम:</span>
@@ -401,11 +401,11 @@
         <section id="sec-causes" class="tab-section hidden space-y-8">
             <div>
                 <h2 class="text-2xl font-bold text-slate-900">हमारे प्रमुख सामाजिक प्रोजेक्ट्स</h2>
-                <p class="text-sm text-slate-500">संस्था द्वारा चलाए जा रहे वर्तमान कल्याणकारी अभियान</p>
+                <p class="text-sm text-slate-500">संस्था द्वारा चलाए जा रहे वर्तमान कल्याणकारी अभियान (दान करते ही फंड और % स्वतः अपडेट होता है)</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Cause Card 1 -->
+                <!-- Cause Card 1: भोजन सेवा -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between">
                     <div class="p-6 space-y-3">
                         <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl font-bold mb-2">
@@ -414,24 +414,27 @@
                         <h3 class="font-bold text-lg text-slate-900">निःशुल्क भोजन सेवा</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">अस्पतालों और झुग्गी बस्तियों के बाहर जरूरतमंदों को रोजाना पौष्टिक भोजन वितरण किया जाता है।</p>
                         
-                        <div class="space-y-1 pt-2">
+                        <div class="space-y-1.5 pt-2">
                             <div class="flex justify-between text-xs font-semibold">
-                                <span>लक्ष्य: ₹50,000</span>
-                                <span class="text-trustPrimary">75% एकत्र</span>
+                                <span>लक्ष्य: <span id="foodTargetText" class="text-slate-800">₹50,000</span></span>
+                                <span id="foodPercentText" class="text-trustPrimary font-bold">0% एकत्र</span>
                             </div>
-                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                                <div class="bg-trustPrimary h-full w-[75%] rounded-full"></div>
+                            <div class="text-[11px] text-slate-500">
+                                एकत्र राशि: <strong id="foodCollectedText" class="text-slate-800">₹0</strong>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                                <div id="foodProgressBar" class="bg-trustPrimary h-full transition-all duration-500 rounded-full" style="width: 0%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="p-4 bg-slate-50 border-t border-slate-100">
-                        <button onclick="switchTab('donate')" class="w-full text-center text-xs font-bold text-trustPrimary hover:underline">
+                        <button onclick="donateForCause('भोजन सेवा (Food Distribution)')" class="w-full text-center text-xs font-bold text-trustPrimary hover:underline">
                             इस प्रोजेक्ट में सहयोग करें &rarr;
                         </button>
                     </div>
                 </div>
 
-                <!-- Cause Card 2 -->
+                <!-- Cause Card 2: बाल शिक्षा अभियान -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between">
                     <div class="p-6 space-y-3">
                         <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl font-bold mb-2">
@@ -440,24 +443,27 @@
                         <h3 class="font-bold text-lg text-slate-900">बाल शिक्षा अभियान</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">गरीब बच्चों को किताबें, बैग और कॉपी-कापियां मुफ्त प्रदान करके शिक्षा से जोड़ना।</p>
                         
-                        <div class="space-y-1 pt-2">
+                        <div class="space-y-1.5 pt-2">
                             <div class="flex justify-between text-xs font-semibold">
-                                <span>लक्ष्य: ₹30,000</span>
-                                <span class="text-trustPrimary">50% एकत्र</span>
+                                <span>लक्ष्य: <span id="eduTargetText" class="text-slate-800">₹30,000</span></span>
+                                <span id="eduPercentText" class="text-trustPrimary font-bold">0% एकत्र</span>
                             </div>
-                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                                <div class="bg-trustPrimary h-full w-[50%] rounded-full"></div>
+                            <div class="text-[11px] text-slate-500">
+                                एकत्र राशि: <strong id="eduCollectedText" class="text-slate-800">₹0</strong>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                                <div id="eduProgressBar" class="bg-trustPrimary h-full transition-all duration-500 rounded-full" style="width: 0%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="p-4 bg-slate-50 border-t border-slate-100">
-                        <button onclick="switchTab('donate')" class="w-full text-center text-xs font-bold text-trustPrimary hover:underline">
+                        <button onclick="donateForCause('बच्चों की शिक्षा (Child Education)')" class="w-full text-center text-xs font-bold text-trustPrimary hover:underline">
                             इस प्रोजेक्ट में सहयोग करें &rarr;
                         </button>
                     </div>
                 </div>
 
-                <!-- Cause Card 3 -->
+                <!-- Cause Card 3: आपातकालीन स्वास्थ्य सेवा -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col justify-between">
                     <div class="p-6 space-y-3">
                         <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-xl font-bold mb-2">
@@ -466,18 +472,21 @@
                         <h3 class="font-bold text-lg text-slate-900">आपातकालीन स्वास्थ्य सेवा</h3>
                         <p class="text-xs text-slate-500 leading-relaxed">निर्धन परिवारों के लिए दवाइयों और मुफ्त मेडिकल कैंप का आयोजन करना।</p>
                         
-                        <div class="space-y-1 pt-2">
+                        <div class="space-y-1.5 pt-2">
                             <div class="flex justify-between text-xs font-semibold">
-                                <span>लक्ष्य: ₹40,000</span>
-                                <span class="text-trustPrimary">40% एकत्र</span>
+                                <span>लक्ष्य: <span id="medTargetText" class="text-slate-800">₹40,000</span></span>
+                                <span id="medPercentText" class="text-trustPrimary font-bold">0% एकत्र</span>
                             </div>
-                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                                <div class="bg-trustPrimary h-full w-[40%] rounded-full"></div>
+                            <div class="text-[11px] text-slate-500">
+                                एकत्र राशि: <strong id="medCollectedText" class="text-slate-800">₹0</strong>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                                <div id="medProgressBar" class="bg-trustPrimary h-full transition-all duration-500 rounded-full" style="width: 0%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="p-4 bg-slate-50 border-t border-slate-100">
-                        <button onclick="switchTab('donate')" class="w-full text-center text-xs font-bold text-trustPrimary hover:underline">
+                        <button onclick="donateForCause('चिकित्सा सहायता (Medical Help)')" class="w-full text-center text-xs font-bold text-trustPrimary hover:underline">
                             इस प्रोजेक्ट में सहयोग करें &rarr;
                         </button>
                     </div>
@@ -560,6 +569,65 @@
                     </button>
                 </div>
 
+                <!-- Adjust Causes Target & Collected Funds -->
+                <div class="space-y-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-sm text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-bullseye text-trustWarm"></i> प्रोजेक्ट लक्ष्य (Causes Target) सेट करें
+                    </h3>
+                    <p class="text-xs text-slate-500">यहाँ से प्रत्येक प्रोजेक्ट का लक्ष्य (Target ₹) और एकत्रित राशि एडजस्ट करें:</p>
+                    
+                    <div class="space-y-3 text-xs">
+                        <!-- Food Cause Control -->
+                        <div class="bg-white p-3 rounded-lg border border-slate-200 space-y-2">
+                            <span class="font-bold text-slate-800 block">1. निःशुल्क भोजन सेवा</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div>
+                                    <label class="text-[10px] text-slate-500 block">लक्ष्य राशि (Target ₹)</label>
+                                    <input type="number" id="inputFoodTarget" class="w-full px-2 py-1.5 border border-slate-300 rounded text-xs">
+                                </div>
+                                <div>
+                                    <label class="text-[10px] text-slate-500 block">एकत्रित राशि (Collected ₹)</label>
+                                    <input type="number" id="inputFoodCollected" class="w-full px-2 py-1.5 border border-slate-300 rounded text-xs">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education Cause Control -->
+                        <div class="bg-white p-3 rounded-lg border border-slate-200 space-y-2">
+                            <span class="font-bold text-slate-800 block">2. बाल शिक्षा अभियान</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div>
+                                    <label class="text-[10px] text-slate-500 block">लक्ष्य राशि (Target ₹)</label>
+                                    <input type="number" id="inputEduTarget" class="w-full px-2 py-1.5 border border-slate-300 rounded text-xs">
+                                </div>
+                                <div>
+                                    <label class="text-[10px] text-slate-500 block">एकत्रित राशि (Collected ₹)</label>
+                                    <input type="number" id="inputEduCollected" class="w-full px-2 py-1.5 border border-slate-300 rounded text-xs">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Medical Cause Control -->
+                        <div class="bg-white p-3 rounded-lg border border-slate-200 space-y-2">
+                            <span class="font-bold text-slate-800 block">3. आपातकालीन स्वास्थ्य सेवा</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div>
+                                    <label class="text-[10px] text-slate-500 block">लक्ष्य राशि (Target ₹)</label>
+                                    <input type="number" id="inputMedTarget" class="w-full px-2 py-1.5 border border-slate-300 rounded text-xs">
+                                </div>
+                                <div>
+                                    <label class="text-[10px] text-slate-500 block">एकत्रित राशि (Collected ₹)</label>
+                                    <input type="number" id="inputMedCollected" class="w-full px-2 py-1.5 border border-slate-300 rounded text-xs">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="saveCausesSettings()" class="w-full bg-trustPrimary hover:bg-emerald-700 text-white font-bold py-2 rounded-lg transition">
+                            ✓ प्रोजेक्ट लक्ष्य अपडेट करें
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Update UPI Settings -->
                 <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
                     <h3 class="font-bold text-sm text-slate-800"><i class="fa-solid fa-qrcode mr-1 text-trustPrimary"></i> UPI ID और QR कोड बदलें</h3>
@@ -581,6 +649,18 @@
                     
                     <div id="adminPendingMembersList" class="space-y-3 pt-1">
                         <!-- Dynamic Pending Members inserted here -->
+                    </div>
+                </div>
+
+                <!-- Admin Approved Members Management (Admin-only Delete) -->
+                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-sm text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-users-gear text-emerald-600"></i> स्वीकृत सदस्य प्रबंधन (सदस्य हटाएं)
+                    </h3>
+                    <p class="text-xs text-slate-500">केवल एडमिन ही स्वीकृत सदस्यों को सूची से हटा सकते हैं:</p>
+                    
+                    <div id="adminApprovedMembersList" class="space-y-2 pt-1 max-h-60 overflow-y-auto">
+                        <!-- Dynamic Approved Members with Admin Delete button -->
                     </div>
                 </div>
 
@@ -627,12 +707,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                    <h4 class="text-white font-bold text-sm mb-2">सहयोग धारा फाउंडेशन</h4>
-                    <p class="leading-relaxed">निःस्वार्थ समाज सेवा एवं मानव विकास को समर्पित चैरिटी फाउंडेशन।</p>
+                    <h4 class="text-white font-bold text-sm mb-2">जन सेवा फाउंडेशन</h4>
+                    <p class="leading-relaxed">निःस्वार्थ समाज सेवा एवं मानव विकास को समर्पित पंजीकृत चैरिटी ट्रस्ट।</p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold text-sm mb-2">त्वरित संपर्क</h4>
-                    <p><i class="fa-solid fa-location-dot mr-1"></i> मुख्य कार्यालय: प्रेम नगर, नगरा, झांसी 284003</p>
+                    <p><i class="fa-solid fa-location-dot mr-1"></i> मुख्य कार्यालय: एमजी रोड, इंदौर, म.प्र.</p>
                     <p class="mt-1"><i class="fa-solid fa-phone mr-1"></i> +91 98765 43210</p>
                 </div>
                 <div>
@@ -646,27 +726,37 @@
                 </div>
             </div>
             <div class="border-t border-slate-800 pt-4 text-center text-slate-500">
-                &copy; 2025 सहयोग धारा फाउंडेशन | सर्वाधिकार सुरक्षित | APK और वेब तैयार
+                &copy; 2026 जन सेवा फाउंडेशन | सर्वाधिकार सुरक्षित | APK और वेब तैयार
             </div>
         </div>
     </footer>
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Default initial trust members state (pre-approved)
-        const initialMembers = [ ];
+        // Zero Default Members
+        const initialMembers = [];
+
+        // Default Causes Goals & Progress Data
+        const defaultCausesData = {
+            food: { target: 50000, collected: 0 },
+            edu: { target: 30000, collected: 0 },
+            med: { target: 40000, collected: 0 }
+        };
 
         // Load data from LocalStorage or initialize
         let members = JSON.parse(localStorage.getItem('jsf_members')) || initialMembers;
         let receiptsCount = parseInt(localStorage.getItem('jsf_receipts_count')) || 0;
         let trustUpiId = localStorage.getItem('jsf_upi_id') || "9876543210@paytm";
+        let causesData = JSON.parse(localStorage.getItem('jsf_causes_data')) || defaultCausesData;
 
         // Save state helper
         function saveState() {
             localStorage.setItem('jsf_members', JSON.stringify(members));
             localStorage.setItem('jsf_receipts_count', receiptsCount);
             localStorage.setItem('jsf_upi_id', trustUpiId);
+            localStorage.setItem('jsf_causes_data', JSON.stringify(causesData));
             updateDashboardCounters();
+            renderCausesProgress();
         }
 
         // Navigation tab switching
@@ -677,6 +767,15 @@
 
             document.getElementById('mobileMenu').classList.add('hidden');
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Redirect directly to Donate page with pre-selected purpose
+        function donateForCause(purposeValue) {
+            switchTab('donate');
+            const purposeDropdown = document.getElementById('dPurpose');
+            if (purposeDropdown) {
+                purposeDropdown.value = purposeValue;
+            }
         }
 
         // Toggle mobile drawer
@@ -698,35 +797,42 @@
                 role,
                 phone,
                 city,
-                status: "pending", // Pending approval from Admin
+                status: "pending",
                 date: new Date().toISOString().split('T')[0]
             };
 
             members.unshift(newMember);
             saveState();
             renderMembers();
+            if (localStorage.getItem('jsf_admin_logged') === 'true') {
+                loadPendingMembersInAdmin();
+            }
             document.getElementById('addMemberForm').reset();
             showToast("आवेदन जमा हो गया है! एडमिन की स्वीकृति के बाद पद प्रदान किया जाएगा।");
         }
 
-        // Delete Member Logic
+        // Delete Member Logic (Only callable from Admin Panel)
         function deleteMember(id) {
+            if (localStorage.getItem('jsf_admin_logged') !== 'true') {
+                alert("केवल एडमिन ही सदस्यों को हटा सकते हैं!");
+                return;
+            }
             if (confirm("क्या आप वाकई इस सदस्य को सूची से हटाना चाहते हैं?")) {
                 members = members.filter(m => m.id !== id);
                 saveState();
                 renderMembers();
                 loadPendingMembersInAdmin();
+                loadApprovedMembersInAdmin();
                 showToast("सदस्य हटा दिया गया!");
             }
         }
 
-        // Render Approved Member Cards with Search filter
+        // Render Approved Member Cards for Public View (NO DELETE BUTTON)
         function renderMembers() {
             const container = document.getElementById('membersContainer');
             const searchVal = document.getElementById('searchMemberInput').value.toLowerCase();
             container.innerHTML = '';
 
-            // Filter ONLY Approved Members for Public Display
             const filtered = members.filter(m => 
                 m.status === "approved" && (
                     m.name.toLowerCase().includes(searchVal) || 
@@ -757,26 +863,66 @@
                         <p class="text-xs text-slate-500"><i class="fa-solid fa-phone text-[10px] mr-1"></i> ${m.phone}</p>
                         <p class="text-[11px] text-slate-400"><i class="fa-solid fa-location-dot text-[10px] mr-1"></i> ${m.city} • <span class="text-[10px]">जुड़े: ${m.date}</span></p>
                     </div>
-                    <button onclick="deleteMember(${m.id})" class="text-slate-300 hover:text-red-500 p-1" title="हटाएं">
-                        <i class="fa-solid fa-trash text-sm"></i>
-                    </button>
                 `;
                 container.appendChild(card);
             });
         }
 
-        // Generate Digital Receipt
+        // Render Causes Progress Bars & Percentages
+        function renderCausesProgress() {
+            // Food Cause
+            const foodTarget = causesData.food.target || 1;
+            const foodCollected = causesData.food.collected || 0;
+            const foodPct = Math.min(100, Math.round((foodCollected / foodTarget) * 100));
+            document.getElementById('foodTargetText').innerText = `₹${foodTarget.toLocaleString('en-IN')}`;
+            document.getElementById('foodCollectedText').innerText = `₹${foodCollected.toLocaleString('en-IN')}`;
+            document.getElementById('foodPercentText').innerText = `${foodPct}% एकत्र`;
+            document.getElementById('foodProgressBar').style.width = `${foodPct}%`;
+
+            // Education Cause
+            const eduTarget = causesData.edu.target || 1;
+            const eduCollected = causesData.edu.collected || 0;
+            const eduPct = Math.min(100, Math.round((eduCollected / eduTarget) * 100));
+            document.getElementById('eduTargetText').innerText = `₹${eduTarget.toLocaleString('en-IN')}`;
+            document.getElementById('eduCollectedText').innerText = `₹${eduCollected.toLocaleString('en-IN')}`;
+            document.getElementById('eduPercentText').innerText = `${eduPct}% एकत्र`;
+            document.getElementById('eduProgressBar').style.width = `${eduPct}%`;
+
+            // Medical Cause
+            const medTarget = causesData.med.target || 1;
+            const medCollected = causesData.med.collected || 0;
+            const medPct = Math.min(100, Math.round((medCollected / medTarget) * 100));
+            document.getElementById('medTargetText').innerText = `₹${medTarget.toLocaleString('en-IN')}`;
+            document.getElementById('medCollectedText').innerText = `₹${medCollected.toLocaleString('en-IN')}`;
+            document.getElementById('medPercentText').innerText = `${medPct}% एकत्र`;
+            document.getElementById('medProgressBar').style.width = `${medPct}%`;
+        }
+
+        // Generate Digital Receipt & Auto-Add Amount to Corresponding Cause
         function handleGenerateReceipt(e) {
             e.preventDefault();
             receiptsCount++;
-            saveState();
 
             const name = document.getElementById('dName').value;
-            const amount = document.getElementById('dAmount').value;
+            const amount = parseFloat(document.getElementById('dAmount').value) || 0;
             const phone = document.getElementById('dPhone').value;
             const txn = document.getElementById('dTxn').value;
             const purpose = document.getElementById('dPurpose').value;
             const today = new Date().toLocaleDateString('hi-IN');
+
+            // Auto-add donated amount to specific Cause
+            if (purpose.includes("भोजन सेवा") || purpose.includes("Food")) {
+                causesData.food.collected += amount;
+            } else if (purpose.includes("शिक्षा") || purpose.includes("Education")) {
+                causesData.edu.collected += amount;
+            } else if (purpose.includes("चिकित्सा") || purpose.includes("Medical")) {
+                causesData.med.collected += amount;
+            }
+
+            saveState();
+            if (localStorage.getItem('jsf_admin_logged') === 'true') {
+                populateCausesAdminInputs();
+            }
 
             document.getElementById('recNo').innerText = `#JSF-${receiptsCount}`;
             document.getElementById('recName').innerText = name;
@@ -841,6 +987,9 @@
 
             members.unshift(newVolunteer);
             saveState();
+            if (localStorage.getItem('jsf_admin_logged') === 'true') {
+                loadPendingMembersInAdmin();
+            }
             document.getElementById('volunteerForm').reset();
             showToast("आवेदन जमा हो गया है! एडमिन की स्वीकृति के बाद जिम्मेदारी सौंपी जाएगी।");
         }
@@ -861,26 +1010,58 @@
             document.getElementById('adminMemberStat').innerText = approvedCount;
             document.getElementById('adminReceiptStat').innerText = receiptsCount;
 
-            // Update UPI display elements
             document.getElementById('trustUpiText').innerText = trustUpiId;
             document.getElementById('upiQrImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=${encodeURIComponent(trustUpiId)}&pn=Jan%20Seva%20Trust&cu=INR`;
         }
 
-        // Admin Panel Logics
+        // Admin Panel Logics (Persistent Session & Password changeable here)
         function verifyAdminLogin() {
             const pass = document.getElementById('adminPasswordInput').value.trim();
-            if (pass === "Founder1912") {
-                document.getElementById('adminLoginBox').classList.add('hidden');
-                document.getElementById('adminDashboardBox').classList.remove('hidden');
-                document.getElementById('adminPasswordInput').value = '';
-                loadPendingMembersInAdmin();
+            
+            // NOTE: पासवर्ड बदलने के लिए यहाँ "admin123" बदलें
+            if (pass === "founder1912") {
+                localStorage.setItem('jsf_admin_logged', 'true');
+                showAdminDashboard();
                 showToast("एडमिन लॉगिन सफल!");
             } else {
                 alert("गलत पासवर्ड! डिफ़ॉल्ट पासवर्ड admin123 है।");
             }
         }
 
+        function showAdminDashboard() {
+            document.getElementById('adminLoginBox').classList.add('hidden');
+            document.getElementById('adminDashboardBox').classList.remove('hidden');
+            document.getElementById('adminPasswordInput').value = '';
+            loadPendingMembersInAdmin();
+            loadApprovedMembersInAdmin();
+            populateCausesAdminInputs();
+        }
+
+        function populateCausesAdminInputs() {
+            document.getElementById('inputFoodTarget').value = causesData.food.target;
+            document.getElementById('inputFoodCollected').value = causesData.food.collected;
+            document.getElementById('inputEduTarget').value = causesData.edu.target;
+            document.getElementById('inputEduCollected').value = causesData.edu.collected;
+            document.getElementById('inputMedTarget').value = causesData.med.target;
+            document.getElementById('inputMedCollected').value = causesData.med.collected;
+        }
+
+        function saveCausesSettings() {
+            causesData.food.target = Math.max(1, parseFloat(document.getElementById('inputFoodTarget').value) || 50000);
+            causesData.food.collected = Math.max(0, parseFloat(document.getElementById('inputFoodCollected').value) || 0);
+            
+            causesData.edu.target = Math.max(1, parseFloat(document.getElementById('inputEduTarget').value) || 30000);
+            causesData.edu.collected = Math.max(0, parseFloat(document.getElementById('inputEduCollected').value) || 0);
+
+            causesData.med.target = Math.max(1, parseFloat(document.getElementById('inputMedTarget').value) || 40000);
+            causesData.med.collected = Math.max(0, parseFloat(document.getElementById('inputMedCollected').value) || 0);
+
+            saveState();
+            showToast("सभी प्रोजेक्ट लक्ष्य और राशि सफलतापूर्वक अपडेट हो गए हैं!");
+        }
+
         function adminLogout() {
+            localStorage.removeItem('jsf_admin_logged');
             document.getElementById('adminDashboardBox').classList.add('hidden');
             document.getElementById('adminLoginBox').classList.remove('hidden');
             showToast("लॉग आउट हो गए।");
@@ -930,7 +1111,7 @@
                     </div>
                     <div class="flex gap-2 pt-1">
                         <select id="role-select-${m.id}" class="flex-1 px-2 py-1 text-xs border border-slate-300 rounded bg-slate-50">
-                             <option value="संस्थापक / Founder">संस्थापक (Founder)</option>
+                                <option value="संस्थापक / Founder">संस्थापक (Founder)</option>
                                 <option value="सह-संस्थापक /CO-Founder">सह-संस्थापक (Co-Founder)</option>
                                 <option value="अध्यक्ष /President">अध्यक्ष (President)</option>
                                 <option value="उपाध्यक्ष /Vice-President">उपाध्यक्ष (Vice-President)</option>
@@ -950,6 +1131,38 @@
             });
         }
 
+        // Render Approved Members in Admin Panel (Admin-only Delete)
+        function loadApprovedMembersInAdmin() {
+            const listContainer = document.getElementById('adminApprovedMembersList');
+            if (!listContainer) return;
+            listContainer.innerHTML = '';
+
+            const approvedMembers = members.filter(m => m.status === "approved");
+
+            if (approvedMembers.length === 0) {
+                listContainer.innerHTML = `
+                    <div class="bg-white p-3 rounded-lg text-center text-slate-400 text-xs border">
+                        कोई स्वीकृत सदस्य नहीं है।
+                    </div>`;
+                return;
+            }
+
+            approvedMembers.forEach(m => {
+                const item = document.createElement('div');
+                item.className = "bg-white p-2.5 rounded-lg border border-slate-200 flex justify-between items-center text-xs";
+                item.innerHTML = `
+                    <div>
+                        <span class="font-bold text-slate-900">${m.name}</span>
+                        <span class="text-slate-500 ml-1">(${m.role})</span>
+                    </div>
+                    <button onclick="deleteMember(${m.id})" class="text-red-500 hover:text-red-700 px-2 py-1 rounded bg-red-50 font-semibold">
+                        <i class="fa-solid fa-trash"></i> हटाएं
+                    </button>
+                `;
+                listContainer.appendChild(item);
+            });
+        }
+
         // Approve Member Logic (Admin)
         function approveMember(id) {
             const roleSelect = document.getElementById(`role-select-${id}`);
@@ -962,6 +1175,7 @@
                 saveState();
                 renderMembers();
                 loadPendingMembersInAdmin();
+                loadApprovedMembersInAdmin();
                 showToast(`सफलतापूर्वक ${member.name} को '${selectedRole}' पद देकर अप्रूव किया गया!`);
             }
         }
@@ -987,15 +1201,20 @@
         }
 
         function resetAllData() {
-            if (confirm("चेतावनी: क्या आप सारा डेटा (सदस्य और रसीद काउंटर) रीसेट करना चाहते हैं?")) {
+            if (confirm("चेतावनी: क्या आप सारा डेटा (सदस्य, रसीद काउंटर और प्रोजेक्ट लक्ष्य) रीसेट करना चाहते हैं?")) {
                 localStorage.clear();
                 members = initialMembers;
-                receiptsCount = 104;
+                receiptsCount = 0;
                 trustUpiId = "9876543210@paytm";
+                causesData = {
+                    food: { target: 50000, collected: 0 },
+                    edu: { target: 30000, collected: 0 },
+                    med: { target: 40000, collected: 0 }
+                };
                 saveState();
                 renderMembers();
                 adminLogout();
-                showToast("डेटा रीसेट कर दिया गया है!");
+                showToast("सारा डेटा रीसेट कर दिया गया है!");
             }
         }
 
@@ -1003,6 +1222,10 @@
         window.onload = function() {
             renderMembers();
             updateDashboardCounters();
+            renderCausesProgress();
+            if (localStorage.getItem('jsf_admin_logged') === 'true') {
+                showAdminDashboard();
+            }
         };
     </script>
 </body>
