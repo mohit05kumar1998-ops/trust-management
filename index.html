@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>जन सेवा फाउंडेशन - Charity & Human Welfare Trust</title>
+    <title>सहयोग धारा फाउंडेशन - Charity & Human Welfare Trust</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -42,11 +42,11 @@
 
     <!-- Top Announcement Bar -->
     <div class="bg-trustDark text-white text-xs sm:text-sm py-2 px-4 text-center flex justify-between items-center max-w-7xl mx-auto w-full">
-        <span><i class="fa-solid fa-heart text-red-500 mr-1"></i> जन सेवा और मानव कल्याण सेवा संघ (पंजीकृत चैरिटी)</span>
+        <span><i class="fa-solid fa-heart text-red-500 mr-1"></i> जन सेवा और मानव कल्याण सेवा संघ</span>
         <div class="hidden sm:flex space-x-4 items-center">
             <a href="tel:+919876543210" class="hover:text-green-400"><i class="fa-solid fa-phone mr-1"></i> +91 98765 43210</a>
             <button onclick="switchTab('admin')" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-2.5 py-1 rounded text-xs transition">
-                <i class="fa-solid fa-lock mr-1"></i> एडमिन पैनल
+                <i class="fa-solid fa-lock mr-1"></i> Admin Panel
             </button>
         </div>
     </div>
@@ -61,8 +61,8 @@
                         <i class="fa-solid fa-hand-holding-heart"></i>
                     </div>
                     <div>
-                        <span class="text-xl font-bold text-slate-900 block leading-tight">जन सेवा फाउंडेशन</span>
-                        <span class="text-xs text-trustPrimary font-medium">Jan Seva Welfare Trust</span>
+                        <span class="text-xl font-bold text-slate-900 block leading-tight">सहयोग धारा फाउंडेशन</span>
+                        <span class="text-xs text-trustPrimary font-medium">Sahyog Dhara Foundation</span>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@
                     <button onclick="switchTab('causes')" class="hover:text-trustPrimary transition-colors py-2" id="nav-causes">कार्य (Causes)</button>
                     <button onclick="switchTab('volunteer')" class="hover:text-trustPrimary transition-colors py-2" id="nav-volunteer">जुड़ें (Volunteer)</button>
                     <button onclick="switchTab('admin')" class="text-amber-600 hover:text-amber-700 font-bold transition-colors py-2 flex items-center gap-1">
-                        <i class="fa-solid fa-user-shield"></i> एडमिन
+                        <i class="fa-solid fa-user-shield"></i> Admin
                     </button>
                 </div>
 
@@ -140,11 +140,11 @@
             <!-- Impact Quick Counter -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
-                    <div class="text-3xl font-extrabold text-trustPrimary mb-1">5,000+</div>
+                    <div class="text-3xl font-extrabold text-trustPrimary mb-1">0</div>
                     <div class="text-xs sm:text-sm text-slate-500 font-medium">भोजन पैकेट वितरित</div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
-                    <div class="text-3xl font-extrabold text-trustWarm mb-1">250+</div>
+                    <div class="text-3xl font-extrabold text-trustWarm mb-1">0</div>
                     <div class="text-xs sm:text-sm text-slate-500 font-medium">बच्चों की शिक्षा सहायता</div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
@@ -152,7 +152,7 @@
                     <div class="text-xs sm:text-sm text-slate-500 font-medium">सक्रिय सदस्य / कार्यकर्ता</div>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
-                    <div class="text-3xl font-extrabold text-indigo-600 mb-1" id="totalDonationCount">1</div>
+                    <div class="text-3xl font-extrabold text-indigo-600 mb-1" id="totalDonationCount">0</div>
                     <div class="text-xs sm:text-sm text-slate-500 font-medium">कुल रसीदें जनरेट हुई</div>
                 </div>
             </div>
@@ -269,7 +269,7 @@
                         <!-- QR Code Frame -->
                         <div class="inline-block p-4 bg-white border-2 border-dashed border-trustPrimary rounded-2xl shadow-inner my-2">
                             <img id="upiQrImage" src="" alt="Trust UPI QR Code" class="w-48 h-48 mx-auto object-contain">
-                            <span class="text-[10px] text-slate-400 block mt-2">Jan Seva Welfare Trust Official QR</span>
+                            <span class="text-[10px] text-slate-400 block mt-2">Sahyog Dhara Foundation Official QR</span>
                         </div>
 
                         <!-- UPI ID & Fast Copy -->
@@ -342,8 +342,8 @@
                     <div id="printableReceipt" class="bg-emerald-50/50 p-6 rounded-xl receipt-border space-y-4">
                         <div class="flex justify-between items-start border-b border-slate-200 pb-3">
                             <div>
-                                <h3 class="font-bold text-lg text-trustPrimary">जन सेवा फाउंडेशन</h3>
-                                <p class="text-[11px] text-slate-500">पंजीकरण संख्या: REG/NGO/2024/1089</p>
+                                <h3 class="font-bold text-lg text-trustPrimary">सहयोग धारा फाउंडेशन</h3>
+                                <p class="text-[11px] text-slate-500">पंजीकरण संख्या: REG/NGO/2025/0000</p>
                             </div>
                             <div class="text-right">
                                 <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-1 rounded">डोनेशन रसीद</span>
@@ -627,12 +627,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                    <h4 class="text-white font-bold text-sm mb-2">जन सेवा फाउंडेशन</h4>
-                    <p class="leading-relaxed">निःस्वार्थ समाज सेवा एवं मानव विकास को समर्पित पंजीकृत चैरिटी ट्रस्ट।</p>
+                    <h4 class="text-white font-bold text-sm mb-2">सहयोग धारा फाउंडेशन</h4>
+                    <p class="leading-relaxed">निःस्वार्थ समाज सेवा एवं मानव विकास को समर्पित चैरिटी फाउंडेशन।</p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold text-sm mb-2">त्वरित संपर्क</h4>
-                    <p><i class="fa-solid fa-location-dot mr-1"></i> मुख्य कार्यालय: एमजी रोड, इंदौर, म.प्र.</p>
+                    <p><i class="fa-solid fa-location-dot mr-1"></i> मुख्य कार्यालय: प्रेम नगर, नगरा, झांसी 284003</p>
                     <p class="mt-1"><i class="fa-solid fa-phone mr-1"></i> +91 98765 43210</p>
                 </div>
                 <div>
@@ -646,7 +646,7 @@
                 </div>
             </div>
             <div class="border-t border-slate-800 pt-4 text-center text-slate-500">
-                &copy; 2026 जन सेवा फाउंडेशन | सर्वाधिकार सुरक्षित | APK और वेब तैयार
+                &copy; 2025 सहयोग धारा फाउंडेशन | सर्वाधिकार सुरक्षित | APK और वेब तैयार
             </div>
         </div>
     </footer>
@@ -658,7 +658,7 @@
 
         // Load data from LocalStorage or initialize
         let members = JSON.parse(localStorage.getItem('jsf_members')) || initialMembers;
-        let receiptsCount = parseInt(localStorage.getItem('jsf_receipts_count')) || 104;
+        let receiptsCount = parseInt(localStorage.getItem('jsf_receipts_count')) || 0;
         let trustUpiId = localStorage.getItem('jsf_upi_id') || "9876543210@paytm";
 
         // Save state helper
@@ -930,13 +930,16 @@
                     </div>
                     <div class="flex gap-2 pt-1">
                         <select id="role-select-${m.id}" class="flex-1 px-2 py-1 text-xs border border-slate-300 rounded bg-slate-50">
-                            <option value="अध्यक्ष / Founder">अध्यक्ष (Founder / Director)</option>
-                            <option value="सचिव / Secretary">सचिव (Secretary)</option>
-                            <option value="कोषाध्यक्ष / Treasurer">कोषाध्यक्ष (Treasurer)</option>
-                            <option value="वरिष्ठ सदस्य / Senior Member">वरिष्ठ सदस्य (Senior Member)</option>
-                            <option value="सक्रिय कार्यकर्ता / Volunteer" selected>सक्रिय कार्यकर्ता (Volunteer)</option>
-                            <option value="संरक्षक / Donor">संरक्षक / डोनर (Donor)</option>
-                            <option value="जिला संयोजक">जिला संयोजक</option>
+                             <option value="संस्थापक / Founder">संस्थापक (Founder)</option>
+                                <option value="सह-संस्थापक /CO-Founder">सह-संस्थापक (Co-Founder)</option>
+                                <option value="अध्यक्ष /President">अध्यक्ष (President)</option>
+                                <option value="उपाध्यक्ष /Vice-President">उपाध्यक्ष (Vice-President)</option>
+                                <option value="महासचिव /Genral Secretary">महासचिव (Genral Secretary)</option>
+                                <option value="संयुक्त सचिव /Joint Secretary">महासचिव (Genral Secretary)</option>
+                                <option value="कोषाध्यक्ष / Treasurer">कोषाध्यक्ष (Treasurer)</option>
+                                <option value="मीडिया एवं प्रचार प्रभारी / Media and Prachar Prabhari">मीडिया एवं प्रचार प्रभारी (Media and Prachar Prabhari)</option>
+                                <option value="सक्रिय कार्यकर्ता / Volunteer" selected>सक्रिय कार्यकर्ता (Volunteer)</option>
+                                <option value="संरक्षक / Donor">संरक्षक / डोनर (Donor)</option>
                         </select>
                         <button onclick="approveMember(${m.id})" class="bg-trustPrimary hover:bg-emerald-700 text-white text-xs font-bold px-3 py-1 rounded">
                             ✓ अप्रूव करें
